@@ -45,6 +45,10 @@ We are always excited to welcome new contributors! There are many ways to help u
 
 To get started, please read our main contribution guidelines: **[Contribution Guidelines](https://github.com/TuwaIO/workflows/blob/main/CONTRIBUTING.md)**.
 
+If you find this library useful, please consider supporting its development. Every contribution helps!
+
+[**➡️ View Support Options**](https://github.com/TuwaIO/workflows/blob/main/Donation.md)
+
 <p align="center">
   Made with ❤️ by the TUWA Community
 </p>
