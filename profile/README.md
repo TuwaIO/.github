@@ -31,19 +31,21 @@ Explore some of our most impactful projects below:
 
 | Repository or package | Description |
 | :--- | :--- |
-| **📂 [workflows](https://github.com/TuwaIO/workflows)**| Centralized repository for **CI/CD pipelines**, **automation**, and community best practices. The go-to source for contributors! |
-| **🌍 [orbit-core](https://github.com/TuwaIO/satellite-connect/tree/main/packages/orbit-core)** | Core library of **interfaces and types** for blockchain interactions. Defines the unified standard for blockchain adapters and transactions. |
-| **⚡ [orbit-evm](https://github.com/TuwaIO/satellite-connect/tree/main/packages/orbit-evm)** | **EVM-compatible chains adapter** (Ethereum, Polygon, etc.). Includes RPC utilities, address formatting, and chain-specific tools. |
-| **🌟 [orbit-solana](https://github.com/TuwaIO/satellite-connect/tree/main/packages/orbit-solana)** | **Solana blockchain adapter** with cluster support and RPC integration. |
-| **🚀 [satellite-core](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-core)** | Universal **wallet connection management system** supporting various wallet standards and protocols. Includes base adapters and connection state management. |
-| **💫 [satellite-evm](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-evm)** | **EVM wallet integration** with support for MetaMask, WalletConnect, and other Ethereum-compatible wallets. Built on **wagmi**. |
-| **⚛️ [satellite-react](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-react)** | **React hooks and components** for wallet integration. Provides easy-to-use abstractions for wallet connection and state management. |
-| **🌠 [satellite-solana](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-solana)** | **Solana wallet integration** supporting Wallet Standard, including Phantom, Solflare, and Mobile Wallet Adapter. |
-| **🎨 [nova-core](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-core)** | TUWA **Theme variables** and **Tailwind utilities**. Foundation for consistent UI/UX across TUWA applications. |
-| **🎯 [nova-transactions](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-transactions)** | **React components for transaction display and management**. Includes transaction lists, status indicators, and confirmation modals. |
-| **🔄 [pulsar-core](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-core)** | **Framework-agnostic core engine** for **state management**, **transaction tracking**, and blockchain logic. |
-| **⚒️ [pulsar-evm](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-evm)** | Adapter for managing complex **EVM-specific workflows**, including Safe, Gelato, and Ethereum transactions. |
-| **🔗 [pulsar-solana](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-solana)** | **Platform-specific adapter for Solana transactions** with RPC integration and cluster management. |
+| **⚙️ [workflows](https://github.com/TuwaIO/workflows)**| Central hub for **CI/CD pipelines**, **automation**, and community best practices. Your go-to source for contributing! |
+| **🧬 [orbit-core](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-core)** | The core library of **interfaces and types** for blockchain interactions. Defines the unified standard for all blockchain adapters and transactions. |
+| **⚡ [orbit-evm](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-evm)** | **EVM-compatible chains adapter** (Ethereum, Polygon, etc.). Packed with RPC utilities, address formatting, and chain-specific tools. |
+| **🌟 [orbit-solana](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-solana)** | **Solana blockchain adapter** featuring full cluster support and seamless RPC integration. |
+| **🛰️ [satellite-core](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-core)** | Universal **wallet connection management system**. Supports various wallet standards, protocols, base adapters, and connection state management. |
+| **🔌 [satellite-evm](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-evm)** | **EVM wallet integration** supporting MetaMask, WalletConnect, and more. Power-packed with **wagmi**. |
+| **⚛️ [satellite-react](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-react)** | **React hooks and components** for seamless wallet integration. Provides easy-to-use abstractions for connection and state management. |
+| **🌟 [satellite-solana](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-solana)** | **Solana wallet integration** supporting the Wallet Standard, including Phantom, Solflare, and Mobile Wallet Adapter. |
+| **🔐 [satellite-siwe-next-auth](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-siwe-next-auth)** | **SIWE authentication**. A simple solution for integrating [Sign In With Ethereum](https://login.xyz), a secure [authentication standard](https://docs.login.xyz/general-information/siwe-overview/eip-4361), to your Next.js app. |
+| **💡 [pulsar-core](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-core)** | **Framework-agnostic core engine** for **state management**, **transaction tracking**, and complex blockchain logic. |
+| **⚡ [pulsar-evm](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-evm)** | Adapter for managing complex **EVM-specific workflows**, including Safe, Gelato, and Ethereum transactions. |
+| **🌟 [pulsar-solana](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-solana)** | **Platform-specific adapter for Solana transactions**, featuring RPC integration and cluster management. |
+| **🎨 [nova-core](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-core)** | TUWA **Theme variables** and **Tailwind utilities**. The foundation for a consistent and beautiful UI/UX across all TUWA applications. |
+| **🧾 [nova-transactions](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-transactions)** | **React components for transaction display and management**. Includes transaction lists, status indicators, and confirmation modals. |
+| **🖼️ [nova-connect](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-connect)** | **Web3 Wallet Hub**. React components, hooks, and providers for multi-chain wallet connections. Built on @tuwaio/satellite-react. |
 | **🧪 [cosmos-playground](https://github.com/TuwaIO/cosmos-playground)** | Interactive environment with **live demos** and **practical examples** of TUWA tools. Perfect for learning and experimenting! |
 
 ---
