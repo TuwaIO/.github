@@ -59,7 +59,7 @@ Explore our modules below:
 | **🌟 [pulsar-solana](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-solana)** | **L4** | **Solana transaction signature tracker** subscribing to modern RPC WebSocket streams. |
 | **⚛️ [pulsar-react](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-react)** | **L4** | **React bindings and hooks** for automated transaction lifecycle management in React dApps. |
 | **☁️ [quasar-dashboard](https://quasar-stg.tuwa.io/)** | **L5** | **Cloud Layer & SaaS Backend**. Manage your Quasar apps and API keys. Next.js Dashboard, NestJS Engine API ("Iron Dome" guard), and BullMQ transaction indexing. |
-| **📦 [quasar-sdk](https://github.com/TuwaIO/quasar/tree/main/packages/quasar-sdk)** | **L5** | Official **TypeScript SDK** for interacting with Quasar cloud services, API key authentication, and telemetry. |
+| **📦 [quasar-sdk](https://github.com/TuwaIO/sdk/tree/main/packages/quasar-sdk)** | **L5** | Official **TypeScript SDK** for interacting with Quasar cloud services, API key authentication, and telemetry. |
 | **🎨 [nova-core](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-core)** | **L6** | Foundation UI layer: **Tailwind CSS v4 design tokens**, CSS variables, and zero-Web3 styling primitives. |
 | **🖼️ [nova-connect](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-connect)** | **L7** | Multi-chain **wallet connection React components**, modals, and account dropdowns. Built on `@tuwaio/satellite-react`. |
 | **🧾 [nova-transactions](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-transactions)** | **L7** | **Transaction visualization UI**: status toasts, activity feeds, and confirmation modals. Built on `@tuwaio/pulsar-react`. |
