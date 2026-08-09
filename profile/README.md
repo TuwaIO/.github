@@ -10,7 +10,7 @@
 
 ---
 
-Welcome! We are **TUWA**, an engineering team and open-source collective dedicated to building headless, framework-agnostic, and self-custodial Web3 technologies. Our mission is to provide developers with modular infrastructure across EVM and Solana, decoupling complex blockchain connection and transaction state management from beautiful visual interfaces.
+Welcome! We are **TUWA**, an engineering team and open-source collective dedicated to building headless, framework-agnostic, and self-custodial Web3 technologies. Our mission is to provide developers with modular infrastructure across EVM and Solana, decoupling complex blockchain connection, authentication, and transaction state management from beautiful visual interfaces.
 
 This organization serves as the central hub for all TUWA public monorepositories, SDKs, UI component libraries, and community standards.
 
@@ -20,7 +20,7 @@ This organization serves as the central hub for all TUWA public monorepositories
 
 The TUWA Ecosystem is structured into 5 decoupled layer stages:
 
-- **Stage 1 — Foundational Core (L1/L2):** Multi-chain primitives and network validation adapters ([`orbit`](#-%EF%B8%8F-featured-repositories-and-packages)).
+- **Stage 1 — Core Auth & Primitives (L1/L2):** Chain-agnostic CAIP-122 authentication engine ([`siwx`](#-%EF%B8%8F-featured-repositories-and-packages)) and multi-chain network validation adapters ([`orbit`](#-%EF%B8%8F-featured-repositories-and-packages)).
 - **Stage 2 — State & Connection (L3/L4):** Headless wallet connection state machine ([`satellite-connect`](#-%EF%B8%8F-featured-repositories-and-packages)) and real-time transaction lifecycle engine ([`pulsar-core`](#-%EF%B8%8F-featured-repositories-and-packages)).
 - **Stage 3 — Cloud Integration (L5):** High-performance backend API, transaction indexing, and organization telemetry ([`quasar`](#-%EF%B8%8F-featured-repositories-and-packages)).
 - **Stage 4 — User Interface (L6/L7):** High-performance React UI components, modals, feeds, and design system ([`nova-uikit`](#-%EF%B8%8F-featured-repositories-and-packages)).
@@ -30,7 +30,7 @@ The TUWA Ecosystem is structured into 5 decoupled layer stages:
 
 ## ⚡ Quick Start
 
-Bootstrap a ready-to-use TUWA Web3 project template pre-configured with EVM, Solana, or full-stack cloud synchronization:
+Bootstrap a ready-to-use TUWA Web3 project template pre-configured with EVM, Solana, SIWX authentication, or full-stack cloud synchronization:
 
 ```bash
 npx @tuwaio/create-cosmos-playground
@@ -46,6 +46,11 @@ Explore our modules below:
 | :--- | :---: | :--- |
 | **⚙️ [workflows](https://github.com/TuwaIO/workflows)** | — | Central hub for **CI/CD automation pipelines**, security standards, and community guidelines. |
 | **📚 [docs](https://github.com/TuwaIO/docs)** | — | Unified **Documentation Hub** (`https://docs.tuwa.io`) for the entire TUWA Ecosystem. |
+| **🛡️ [siwx-core](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-core)** | **L1** | Pure **CAIP-122 authentication engine** for building, parsing, and validating multi-chain sign-in messages. Zero dependencies. |
+| **⚡ [siwx-evm](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-evm)** | **L2** | **EVM authentication adapter** supporting EIP-191 and EIP-1271 signatures. |
+| **🌟 [siwx-solana](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-solana)** | **L2** | **Solana authentication adapter** for native `ed25519` signature verification via `SubtleCrypto`. |
+| **⚛️ [siwx-react](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-react)** | **L2** | **React hooks and Zustand store** for securely managing SIWX sessions on the client. |
+| **⚙️ [siwx-server](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-server)** | **L2** | **Backend-agnostic server utilities** for verifying CAIP-122 payloads and cookie management. |
 | **🧬 [orbit-core](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-core)** | **L1** | Framework-agnostic multi-chain **primitives**, types, validation helpers, and storage utilities. |
 | **⚡ [orbit-evm](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-evm)** | **L2** | **EVM chain adapter** powered by `viem` and `@wagmi/core`. RPC client creation and ENS resolution. |
 | **🌟 [orbit-solana](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-solana)** | **L2** | **Solana chain adapter** powered by `gill` and `@wallet-standard`. Cluster management & RPC helpers. |
@@ -53,7 +58,6 @@ Explore our modules below:
 | **🔌 [satellite-evm](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-evm)** | **L4** | **EVM wallet connector** logic integrating Wagmi and Viem provider adapters. |
 | **🌟 [satellite-solana](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-solana)** | **L4** | **Solana wallet connector** logic integrating Wallet Standard and Gill helpers. |
 | **⚛️ [satellite-react](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-react)** | **L4** | **React hooks and context providers** for seamless headless wallet connection management. |
-| **🔐 [satellite-siwe-next-auth](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-siwe-next-auth)** | **L4** | **Sign-In with Ethereum (SIWE)** authentication integration for Next.js powered by `iron-session`. |
 | **💡 [pulsar-core](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-core)** | **L3** | Headless framework-agnostic **transaction lifecycle state machine** (pending, success, failed, replaced). |
 | **⚡ [pulsar-evm](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-evm)** | **L4** | **EVM transaction tracking adapter** for polling and receipt verification. |
 | **🌟 [pulsar-solana](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-solana)** | **L4** | **Solana transaction signature tracker** subscribing to modern RPC WebSocket streams. |
@@ -88,8 +92,3 @@ To get started, please review our **[Contribution Guidelines](https://github.com
 If you find TUWA infrastructure valuable for your dApps, consider supporting our open-source development.
 
 [**➡️ View Support Options**](https://github.com/TuwaIO/workflows/blob/main/Donation.md)
-
-<p align="center">
-  <b>Built with ❤️ by TUWA.</b><br/>
-  Together, let’s build the Web3 future!
-</p>
