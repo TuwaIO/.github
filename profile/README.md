@@ -22,7 +22,7 @@ The TUWA Ecosystem is structured into 5 decoupled layer stages:
 
 - **Stage 1 — Core Auth & Primitives (L1/L2):** Chain-agnostic CAIP-122 authentication engine ([`siwx`](#-%EF%B8%8F-featured-repositories-and-packages)) and multi-chain network validation adapters ([`orbit`](#-%EF%B8%8F-featured-repositories-and-packages)).
 - **Stage 2 — State & Connection (L3/L4):** Headless wallet connection state machine ([`satellite-connect`](#-%EF%B8%8F-featured-repositories-and-packages)) and real-time transaction lifecycle engine ([`pulsar-core`](#-%EF%B8%8F-featured-repositories-and-packages)).
-- **Stage 3 — Cloud Integration (L5):** High-performance backend API, transaction indexing, and organization telemetry ([`quasar`](#-%EF%B8%8F-featured-repositories-and-packages)).
+- **Stage 3 — Cloud Integration (L5):** High-performance backend API, transaction indexing, and organization telemetry ([`quasar`](#-%EF%B8%8F-featured-repositories-and-packages)), also available as a self-hosted open-source edition ([`quasar-community`](#-%EF%B8%8F-featured-repositories-and-packages)).
 - **Stage 4 — User Interface (L6/L7):** High-performance React UI components, modals, feeds, and design system ([`nova-uikit`](#-%EF%B8%8F-featured-repositories-and-packages)).
 - **Stage 5 — SDK Integration Layer (L8/L9):** Unified client SDK wrappers for single-line dApp initialization ([`sdk`](#-%EF%B8%8F-featured-repositories-and-packages)).
 
@@ -63,6 +63,7 @@ Explore our modules below:
 | **🌟 [pulsar-solana](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-solana)** | **L4** | **Solana transaction signature tracker** subscribing to modern RPC WebSocket streams. |
 | **⚛️ [pulsar-react](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-react)** | **L4** | **React bindings and hooks** for automated transaction lifecycle management in React dApps. |
 | **☁️ [quasar-dashboard](https://quasar-stg.tuwa.io/)** | **L5** | **Cloud Layer & SaaS Backend**. Manage your Quasar apps and API keys. Next.js Dashboard, NestJS Engine API ("Iron Dome" guard), and BullMQ transaction indexing. |
+| **🏠 [quasar-community](https://github.com/TuwaIO/quasar-community)** | **L5** | **Self-hosted Community Edition** of Quasar (Apache-2.0). Run your own transaction indexing and tracking engine for EVM and Solana with Docker Compose: Payload admin panel, NestJS Engine API, BullMQ workers, and signed webhooks. |
 | **📦 [quasar-sdk](https://github.com/TuwaIO/sdk/tree/main/packages/quasar-sdk)** | **L5** | Official **TypeScript SDK** for interacting with Quasar cloud services, API key authentication, and telemetry. |
 | **🎨 [nova-core](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-core)** | **L6** | Foundation UI layer: **Tailwind CSS v4 design tokens**, CSS variables, and zero-Web3 styling primitives. |
 | **🖼️ [nova-connect](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-connect)** | **L7** | Multi-chain **wallet connection React components**, modals, and account dropdowns. Built on `@tuwaio/satellite-react`. |
