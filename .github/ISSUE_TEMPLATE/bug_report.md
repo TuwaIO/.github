@@ -24,9 +24,11 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Environment (please complete the following information):**
-- OS: [e.g. macOS, Windows]
-- Browser: [e.g. Chrome, Safari]
-- Package versions (`@tuwaio/...`): [e.g. 0.0.1]
+- Package versions (`@tuwaio/...`): [e.g. `@tuwaio/sdk` 0.4.0]
+- Network: [e.g. Ethereum mainnet, Base, Solana devnet]
+- Wallet: [e.g. MetaMask, Phantom, Coinbase Smart Wallet]
+- Framework: [e.g. Next.js 16, Vite]
+- Browser and OS: [e.g. Chrome on macOS]
 
 **Additional context**
 Add any other context about the problem here.

@@ -1,95 +1,82 @@
-# Welcome to the TUWA GitHub Organization!
+# TUWA
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TuwaIO/workflows/main/preview/tuwa_preview.gif" alt="TUWA Preview Demo" width="100%" max-width="800px" />
+  <img src="https://raw.githubusercontent.com/TuwaIO/workflows/main/preview/tuwa_preview.gif" alt="TUWA preview: wallet connection, sign-in and transaction tracking" width="100%" />
 </div>
 
 <p align="center">
-  <strong>Building Modular, Self-Custodial & High-Performance Web3 Infrastructure.</strong>
+  <strong>Open-source TypeScript toolkit for self-custodial apps on EVM and Solana.</strong>
+</p>
+
+<p align="center">
+  <a href="https://tuwa.io">Website</a> ·
+  <a href="https://docs.tuwa.io">Docs</a> ·
+  <a href="https://docs.tuwa.io/playground">Playground</a> ·
+  <a href="https://discord.gg/9dN8tkTk7u">Discord</a> ·
+  <a href="https://t.me/tuwa_io">Telegram</a> ·
+  <a href="https://x.com/tuwa_io">X</a>
 </p>
 
 ---
 
-Welcome! We are **TUWA**, an engineering team and open-source collective dedicated to building headless, framework-agnostic, and self-custodial Web3 technologies. Our mission is to provide developers with modular infrastructure across EVM and Solana, decoupling complex blockchain connection, authentication, and transaction state management from beautiful visual interfaces.
+TUWA covers the layer every self-custodial app rebuilds: **wallet connection**, **multi-chain sign-in** with one CAIP-122 flow, **transaction tracking** that survives page reloads, **React components** for all of it, and **Quasar**, a backend for transaction history and webhooks that you run in our cloud or on your own servers.
 
-This organization serves as the central hub for all TUWA public monorepositories, SDKs, UI component libraries, and community standards.
-
----
-
-## 🏗️ Ecosystem Architecture
-
-The TUWA Ecosystem is structured into 5 decoupled layer stages:
-
-- **Stage 1 — Core Auth & Primitives (L1/L2):** Chain-agnostic CAIP-122 authentication engine ([`siwx`](#-%EF%B8%8F-featured-repositories-and-packages)) and multi-chain network validation adapters ([`orbit`](#-%EF%B8%8F-featured-repositories-and-packages)).
-- **Stage 2 — State & Connection (L3/L4):** Headless wallet connection state machine ([`satellite-connect`](#-%EF%B8%8F-featured-repositories-and-packages)) and real-time transaction lifecycle engine ([`pulsar-core`](#-%EF%B8%8F-featured-repositories-and-packages)).
-- **Stage 3 — Cloud Integration (L5):** High-performance backend API, transaction indexing, and organization telemetry ([`quasar`](#-%EF%B8%8F-featured-repositories-and-packages)), also available as a self-hosted open-source edition ([`quasar-community`](#-%EF%B8%8F-featured-repositories-and-packages)).
-- **Stage 4 — User Interface (L6/L7):** High-performance React UI components, modals, feeds, and design system ([`nova-uikit`](#-%EF%B8%8F-featured-repositories-and-packages)).
-- **Stage 5 — SDK Integration Layer (L8/L9):** Unified client SDK wrappers for single-line dApp initialization ([`sdk`](#-%EF%B8%8F-featured-repositories-and-packages)).
-
----
+Every package is open source under Apache-2.0, headless and framework-agnostic at its core. Install the whole stack with one SDK, or only the packages you need. TUWA is built in the open by [Oleksandr Tkach](https://tuwa.io/team/oleksandr) in Lviv, Ukraine.
 
 ## ⚡ Quick Start
 
-Bootstrap a ready-to-use TUWA Web3 project template pre-configured with EVM, Solana, SIWX authentication, or full-stack cloud synchronization:
+Start from a ready-made Next.js or Vite template:
 
 ```bash
 npx @tuwaio/create-cosmos-playground
 ```
 
----
+Or add TUWA to an existing React app:
 
-## ✨ Featured Repositories and Packages
+```bash
+pnpm add @tuwaio/sdk @tuwaio/evm-sdk     # EVM
+pnpm add @tuwaio/sdk @tuwaio/solana-sdk  # Solana
+```
 
-Explore our modules below:
+## 🏗️ How TUWA Is Built
 
-| Repository or Package | Stage / Layer | Description |
-| :--- | :---: | :--- |
-| **⚙️ [workflows](https://github.com/TuwaIO/workflows)** | — | Central hub for **CI/CD automation pipelines**, security standards, and community guidelines. |
-| **📚 [docs](https://github.com/TuwaIO/docs)** | — | Unified **Documentation Hub** (`https://docs.tuwa.io`) for the entire TUWA Ecosystem. |
-| **🛡️ [siwx-core](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-core)** | **L1** | Pure **CAIP-122 authentication engine** for building, parsing, and validating multi-chain sign-in messages. Zero dependencies. |
-| **⚡ [siwx-evm](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-evm)** | **L2** | **EVM authentication adapter** supporting EIP-191 and EIP-1271 signatures. |
-| **🌟 [siwx-solana](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-solana)** | **L2** | **Solana authentication adapter** for native `ed25519` signature verification via `SubtleCrypto`. |
-| **⚛️ [siwx-react](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-react)** | **L2** | **React hooks and Zustand store** for securely managing SIWX sessions on the client. |
-| **⚙️ [siwx-server](https://github.com/TuwaIO/siwx/tree/main/packages/siwx-server)** | **L2** | **Backend-agnostic server utilities** for verifying CAIP-122 payloads and cookie management. |
-| **🧬 [orbit-core](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-core)** | **L1** | Framework-agnostic multi-chain **primitives**, types, validation helpers, and storage utilities. |
-| **⚡ [orbit-evm](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-evm)** | **L2** | **EVM chain adapter** powered by `viem` and `@wagmi/core`. RPC client creation and ENS resolution. |
-| **🌟 [orbit-solana](https://github.com/TuwaIO/orbit/tree/main/packages/orbit-solana)** | **L2** | **Solana chain adapter** powered by `gill` and `@wallet-standard`. Cluster management & RPC helpers. |
-| **🛰️ [satellite-core](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-core)** | **L3** | Headless universal **wallet connection state machine** powered by Zustand and Immer. |
-| **🔌 [satellite-evm](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-evm)** | **L4** | **EVM wallet connector** logic integrating Wagmi and Viem provider adapters. |
-| **🌟 [satellite-solana](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-solana)** | **L4** | **Solana wallet connector** logic integrating Wallet Standard and Gill helpers. |
-| **⚛️ [satellite-react](https://github.com/TuwaIO/satellite-connect/tree/main/packages/satellite-react)** | **L4** | **React hooks and context providers** for seamless headless wallet connection management. |
-| **💡 [pulsar-core](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-core)** | **L3** | Headless framework-agnostic **transaction lifecycle state machine** (pending, success, failed, replaced). |
-| **⚡ [pulsar-evm](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-evm)** | **L4** | **EVM transaction tracking adapter** for polling and receipt verification. |
-| **🌟 [pulsar-solana](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-solana)** | **L4** | **Solana transaction signature tracker** subscribing to modern RPC WebSocket streams. |
-| **⚛️ [pulsar-react](https://github.com/TuwaIO/pulsar-core/tree/main/packages/pulsar-react)** | **L4** | **React bindings and hooks** for automated transaction lifecycle management in React dApps. |
-| **☁️ [quasar-dashboard](https://quasar-stg.tuwa.io/)** | **L5** | **Cloud Layer & SaaS Backend**. Manage your Quasar apps and API keys. Next.js Dashboard, NestJS Engine API ("Iron Dome" guard), and BullMQ transaction indexing. |
-| **🏠 [quasar-community](https://github.com/TuwaIO/quasar-community)** | **L5** | **Self-hosted Community Edition** of Quasar (Apache-2.0). Run your own transaction indexing and tracking engine for EVM and Solana with Docker Compose: Payload admin panel, NestJS Engine API, BullMQ workers, and signed webhooks. |
-| **📦 [quasar-sdk](https://github.com/TuwaIO/sdk/tree/main/packages/quasar-sdk)** | **L5** | Official **TypeScript SDK** for interacting with Quasar cloud services, API key authentication, and telemetry. |
-| **🎨 [nova-core](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-core)** | **L6** | Foundation UI layer: **Tailwind CSS v4 design tokens**, CSS variables, and zero-Web3 styling primitives. |
-| **🖼️ [nova-connect](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-connect)** | **L7** | Multi-chain **wallet connection React components**, modals, and account dropdowns. Built on `@tuwaio/satellite-react`. |
-| **🧾 [nova-transactions](https://github.com/TuwaIO/nova-uikit/tree/main/packages/nova-transactions)** | **L7** | **Transaction visualization UI**: status toasts, activity feeds, and confirmation modals. Built on `@tuwaio/pulsar-react`. |
-| **📦 [sdk](https://github.com/TuwaIO/sdk/tree/main/packages/sdk)** | **L8** | Core **TUWA Client SDK** unifying Satellite, Pulsar, and Orbit into a single entry point. |
-| **⚡ [evm-sdk](https://github.com/TuwaIO/sdk/tree/main/packages/evm-sdk)** | **L9** | Pre-configured **EVM Client SDK** optimized for Ethereum, Polygon, Arbitrum, and EVM chains. |
-| **🌟 [solana-sdk](https://github.com/TuwaIO/sdk/tree/main/packages/solana-sdk)** | **L9** | Pre-configured **Solana Client SDK** optimized for Solana mainnet, devnet, and custom RPC clusters. |
-| **🧪 [cosmos-playground](https://github.com/TuwaIO/cosmos-playground)** | — | Interactive **playground & starter templates** (`@tuwaio/create-cosmos-playground`) for building dApps with TUWA. |
+TUWA is built in five stages. Each project depends only on the stages below it, so any of them can be used on its own.
 
----
+| Stage | Projects | What it does |
+| :--- | :--- | :--- |
+| **1 — Core Auth & Primitives** | [SIWX](https://siwx.docs.tuwa.io), [Orbit Utils](https://orbit.docs.tuwa.io) | CAIP-122 sign-in for EVM and Solana wallets, verified on your server, and multi-chain helpers |
+| **2 — State & Connection** | [Satellite Connect](https://satellite.docs.tuwa.io), [Pulsar](https://pulsar.docs.tuwa.io) | Wallet connection and transaction tracking in headless stores |
+| **3 — Backend & Sync** | [Quasar Cloud](https://tuwa.io/quasar), [Quasar Community Edition](https://github.com/TuwaIO/quasar-community) | Server-side transaction tracking, history on every device and signed webhooks |
+| **4 — User Interface** | [Nova UI Kit](https://stories.tuwa.io) | React components for Satellite Connect and Pulsar |
+| **5 — SDK Integration Layer** | [TUWA SDK](https://sdk.docs.tuwa.io) | One package for React apps, with EVM and Solana add-ons |
+
+## 📦 Repositories
+
+| Repository | Packages | Description |
+| :--- | :--- | :--- |
+| 🛡️ **[siwx](https://github.com/TuwaIO/siwx)** | `siwx-core` (L1), `siwx-evm`, `siwx-solana`, `siwx-react`, `siwx-server` (L2) | One CAIP-122 sign-in flow for EVM and Solana wallets: EIP-191, EIP-1271 and ERC-6492 verification on every EVM chain, ed25519 on Solana, single-use nonces, sessions, Next.js handlers and JWT + JWKS for external auth providers. |
+| 🧬 **[orbit](https://github.com/TuwaIO/orbit)** | `orbit-core` (L1), `orbit-evm`, `orbit-solana` (L2) | Multi-chain helpers: chain and account IDs (CAIP-2, CAIP-10, CAIP-19), cached viem and `@solana/kit` clients, ENS and SNS names, ERC-4337 smart accounts. |
+| 🛰️ **[satellite-connect](https://github.com/TuwaIO/satellite-connect)** | `satellite-core` (L3), `satellite-evm`, `satellite-solana`, `satellite-react` (L4) | Headless store for EVM and Solana wallet connections: reconnects the last wallet, follows changes made in the wallet and keeps SIWX sessions in sync. Wallets come from wagmi (EIP-6963) and Wallet Standard. |
+| 💡 **[pulsar-core](https://github.com/TuwaIO/pulsar-core)** | `pulsar-core` (L3), `pulsar-evm`, `pulsar-solana`, `pulsar-react` (L4) | Transaction tracking that survives page reloads: pending, successful, failed and replaced transactions, with trackers for EVM, ERC-4337, Safe, Gelato and Solana. |
+| ☁️ **[Quasar Cloud](https://tuwa.io/quasar)** | `quasar-sdk` (L5) | Managed backend: tracks your app's transactions on the server until their final status, keeps their history on every device and sends signed webhooks. Usage-based pricing, no per-user fees. [Dashboard](https://quasar.tuwa.io) |
+| 🏠 **[quasar-community](https://github.com/TuwaIO/quasar-community)** | — | The open-source (Apache-2.0), self-hosted edition of Quasar, deployed with Docker Compose. Move an organization from Quasar Cloud to your own node at any time. |
+| 🎨 **[nova-uikit](https://github.com/TuwaIO/nova-uikit)** | `nova-core` (L6), `nova-connect`, `nova-transactions` (L7) | React components for wallet connection and transactions: connect button and modals, SIWX sign-in, transaction toasts and history, themed with CSS variables. [Storybook](https://stories.tuwa.io) |
+| 📦 **[sdk](https://github.com/TuwaIO/sdk)** | `sdk` (L8), `evm-sdk`, `solana-sdk` (L9), `quasar-sdk` (L5) | The TUWA SDK: one package for React apps that re-exports Orbit Utils, SIWX, Satellite Connect, Pulsar and Nova UI Kit, plus the EVM and Solana add-ons and the Quasar API client. |
+| 🧪 **[cosmos-playground](https://github.com/TuwaIO/cosmos-playground)** | `create-cosmos-playground` | Starter templates for Next.js and Vite (EVM, Solana, both, or the full stack with Quasar sync) and the CLI that creates them. |
+| 📚 **[docs](https://github.com/TuwaIO/docs)** | `docs-ui` | The documentation hub ([docs.tuwa.io](https://docs.tuwa.io)): guides, the Playground, the Stack Configurator, comparisons and the Quasar docs. |
+| ⚙️ **[workflows](https://github.com/TuwaIO/workflows)** | — | Shared CI/CD workflows, community guidelines and the [guide for AI coding agents](https://github.com/TuwaIO/workflows/blob/main/TUWA_AGENTS.md). |
+
+Every package with its npm description, peers and the guides that use it: [docs.tuwa.io](https://docs.tuwa.io).
 
 ## 🤝 Get Involved
 
-We invite developers and open-source contributors from around the world to collaborate with us:
+* **💻 Code:** propose improvements or open a pull request in any repository.
+* **🐞 Bugs:** file an issue with the steps to reproduce it.
+* **💡 Ideas:** share the integration you are building and what is missing.
+* **📖 Docs:** make a guide clearer or add an example.
 
-* **💻 Code Contributions:** Propose enhancements or submit pull requests across any repository.
-* **🐞 Bug Reports:** Help us harden our libraries by filing detailed issues.
-* **💡 Feature Requests:** Share architectural ideas and dApp integration use cases.
-* **📖 Documentation:** Improve guide clarity, API reference coverage, and code examples.
+Start with the **[contribution guidelines](https://github.com/TuwaIO/workflows/blob/main/CONTRIBUTING.md)**, and ask questions on [Discord](https://discord.gg/9dN8tkTk7u) or [Telegram](https://t.me/tuwa_io).
 
-To get started, please review our **[Contribution Guidelines](https://github.com/TuwaIO/workflows/blob/main/CONTRIBUTING.md)**.
+## 💬 Support TUWA
 
----
-
-## 💬 Community & Support
-
-If you find TUWA infrastructure valuable for your dApps, consider supporting our open-source development.
-
-[**➡️ View Support Options**](https://github.com/TuwaIO/workflows/blob/main/Donation.md)
+If TUWA helps your app, consider supporting its open-source development: **[support options](https://github.com/TuwaIO/workflows/blob/main/Donation.md)**.

@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 💬 Ask a Question or Discuss an Idea
-    url: https://github.com/TuwaIO/web3-transactions-tracking/discussions
-    about: Please use GitHub Discussions for questions and broader conversations.
+  - name: 💬 Ask a Question
+    url: https://discord.gg/9dN8tkTk7u
+    about: Ask questions and discuss ideas with the TUWA community on Discord (or Telegram, https://t.me/tuwa_io).
+  - name: 📚 Read the Documentation
+    url: https://docs.tuwa.io
+    about: Guides, the Playground and every package with its API reference.
+  - name: 🔒 Report a Security Issue
+    url: https://github.com/TuwaIO/.github/blob/main/SECURITY.md
+    about: Do not open a public issue for a vulnerability; email security@tuwa.io instead.
